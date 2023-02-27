@@ -3,31 +3,34 @@ title: "A3: SPL Library Checkouts"
 output: html_document
 ---
 
+
 ### Introduction
 
-An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
+For my data, I decided to look into what were checked out during the years 2022-2023 from the Seattle Public Library. With this data, I am trying to find what books and items were checked out the most. Not only that, I also wanted to see what different categories of things were being checked out at the library and how frequently they were being checked out. I wanted to take a look at trends/books/items from this data set because one, it gives me the most recent data I could take a look at. two, it lets me see what others are checking out more frequently than other books and items from the library, which then could help me look further into why that is the case. Is it an award winning book? Is it written by a famous Author? It lets me answer questions that I am unable to answer without this data set.
 
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
-These will likely be calculated using your DPLYR skills, answering questions such as:
+``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("summary.R")}
+```
 
-- What is the average number of checkouts for each item?
-- What is the month or year with the most/least checkouts for a book that you're interested in?
-- What is the month or year with the most/least checkouts for ebooks?
-- How has the number of print book checkouts changed over time?
+For my summary, I focused on finding the highest amounts and averages. For example, I found out that the most checked out category/type of item was a `r most_category`. Finding this out, it led me to ask which physical book had the highest amount of checkouts from this data, which then I found was `r highest_count_book` This then led me to wonder just how much is the average amount of checkouts per month. While looking more into the data set, I found out that the average checkout number per month was `r physical_avg_month`. Which in other words means that there was around 337,896 physical books being checked out per month. That is crazy! Another thing I wanted to look into while doing summaries was how many kids were checking out Dr.Seuss books. When I was a kid, I would often read and check out Seuss books myself and wanted to see if that was still the case with kids today. With further search, I found that at the Seattle Pacific Library, `r seuss_avg_month` of Dr.Seuss books were being checked out each month. I'm glad that the books I grew up with are still helping kids learn and have fun while reading books. Finally, the last thing I wanted to look at was which publisher saw the most success with their works. More people reading and checking out their books should mean that their goal for publishing their work was more succesful. So looking further into this, I found out that `r most_publish_checkout` were the publishers with the most checkouts. 
 
-Feel free to calculate and report values that you find relevant.
 
 ### The Dataset
 
-- Who collected/published the data?  
-- What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
-- How was the data collected or generated?  
-- Why was the data collected?  
-- What, if any, ethical questions do you need to consider when working with this data?  
-- What are possible limitations or problems with this data?   (at least 200 words)
+- The Seattle Public Library created this data set  
+
+- The parameters of the data are checkout months, year, type, and count, material type, title, ISBN, creator, publisher, published year, and subjects
+
+- As SPL has stated themselves, they have collected this data through multiple current and historical sources. They mention specifically for digital items, some sources they have got it from are Overdrive, Hoopla, Freegal, and more. 
+
+- This data was collected because Seattle Pacific Library wanted to see different trends and rates of which items from their library were being checked out. Which were being checked out more, less, so many different trends they tried to look at with this data set. 
+
+- I know that there are protests for books to be removed from libraries and other book stores because of political issues. With that in mind, were some books that were checked out removed from this data set specifically because of this reason?
+
+- Some possible limitations and challenges that this data has been that one, it only includes data from 2022-2023. Any other data outside of these years are non-existent in this data set. Yes, the amount of data in this data set is a lot. However, when we put that compared to every single checkout from every year at Seattle Pacific Library, it does not tell the whole story. For example, the highest checked-out book from this data set will not likely be the highest checked-out book all-time at Seattle Pacific Library. Two, the challenge that this data bring is that we don't know who checked out the book. Sometimes people check out the same book multiple times. This then leads us to not being able to accurately find how many unique people have checked out the book without the risk of having duplicates of the same people in checkouts. If we had a way to count checkouts without having duplicates of the same people in it, it could lead to a different type of categories, books, or other data sets being the most checked out. It could also lead to the month where the most checkouts were seen to be different with this information. However, this data set does not have the ability to do that.
 
 
 ### First Trends Over Time Chart
@@ -59,7 +62,7 @@ The second chart that you will create and include will show another trend over t
 - Show more than one, but fewer than ~10 trends
   - For example, two books, or 5 different mediums
 - You must have clear x and y axis labels
-- The chart needs a clear title 
+- The chart needs a clear title
 - You need a legend for your different line colors and a clear - legend title
 In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
 

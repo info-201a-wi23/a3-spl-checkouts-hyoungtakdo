@@ -34,6 +34,10 @@ vignettes/*.pdf
 *_cache/
 /cache/
 
+# the data
+
+2022-2023-All-Checkouts-SPL-Data.csv
+
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
