@@ -33,57 +33,25 @@ For my summary, I focused on finding the highest amounts and averages. For examp
 - Some possible limitations and challenges that this data has been that one, it only includes data from 2022-2023. Any other data outside of these years are non-existent in this data set. Yes, the amount of data in this data set is a lot. However, when we put that compared to every single checkout from every year at Seattle Pacific Library, it does not tell the whole story. For example, the highest checked-out book from this data set will not likely be the highest checked-out book all-time at Seattle Pacific Library. Two, the challenge that this data bring is that we don't know who checked out the book. Sometimes people check out the same book multiple times. This then leads us to not being able to accurately find how many unique people have checked out the book without the risk of having duplicates of the same people in checkouts. If we had a way to count checkouts without having duplicates of the same people in it, it could lead to a different type of categories, books, or other data sets being the most checked out. It could also lead to the month where the most checkouts were seen to be different with this information. However, this data set does not have the ability to do that.
 
 
-### First Trends Over Time Chart
+### Physical vs Digital Checkout Per Month Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The first chart that you will create and include will show the trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1_example.R")}
 ```
 
-### Second Trends Over Time Chart
+For this graph, I took a look at the checkout counts per month comparing physical and digital items. I included this chart into my report because I wanted to show how the digital era is here and that digital items are being checked out a growing amount while physical items are decreasing. The first thing I noticed with this chart was that over the months in 2022, the amount of digital checkouts saw an overall increase by the end of the year while physical copies saw a decrease. Something that also surprised me was that not once during any of the months was there a case where more physical items were checked out more than digital items at the library.
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+### Seuss Book Chart
 
-The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+``````{r, echo = FALSE, Message = FALSE, Warning = FALSE, code = readLines("chart2_example.R")}
 ```
 
-### Your Choice
+For this chart, I took a look at some of Seuss's books over the span of the year 2022 and looked at how often they were checked out per month. I looked into this data because Seuss is a well known name and these four different books by him all had different and interesting data. First off, out of the four books, I saw that the book Fox in socks was the most popular while it seemed like Happy birthday to you! was the least popular. I also noticed how the rates of the books being checked out increase and decrease go in a very steep rate. it was either checked out a lot, and than checked out way lower the next month. I grew up on Seuss books and I see that it is still being read by people in the library to this day.
 
-The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
+### Checkout Count Per Month Chart
 
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
 
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+``````{r, echo = FALSE, Message = FALSE, Warning = FALSE, code = readLines("chart3.R")}
 ```
 
+For my last chart, I decided to focus on finding the total amount of checkouts for each month. I decided to make a column chart because I believed showing the visualizations next to each month would best show which month had lower or higher checkout counts each month. While analyzing this data, I found that August had the highest checkout count out of any month. While connecting all my charts, I also saw something interesting where all the numbers for the charts are down around February and April which I thought was really interesting. I also noticed that the numbers of checkouts were not going lower than 600,000, which helped show me that libraries are still up and running and are in good business.
 
