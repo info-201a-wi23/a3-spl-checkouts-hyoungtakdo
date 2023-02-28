@@ -10,10 +10,8 @@ For my data, I decided to look into what were checked out during the years 2022-
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
 ``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("summary.R")}
-```
+````
 
 For my summary, I focused on finding the highest amounts and averages. For example, I found out that the most checked out category/type of item was a `r most_category`. Finding this out, it led me to ask which physical book had the highest amount of checkouts from this data, which then I found was `r highest_count_book` This then led me to wonder just how much is the average amount of checkouts per month. While looking more into the data set, I found out that the average checkout number per month was `r physical_avg_month`. Which in other words means that there was around 337,896 physical books being checked out per month. That is crazy! Another thing I wanted to look into while doing summaries was how many kids were checking out Dr.Seuss books. When I was a kid, I would often read and check out Seuss books myself and wanted to see if that was still the case with kids today. With further search, I found that at the Seattle Pacific Library, `r seuss_avg_month` of Dr.Seuss books were being checked out each month. I'm glad that the books I grew up with are still helping kids learn and have fun while reading books. Finally, the last thing I wanted to look at was which publisher saw the most success with their works. More people reading and checking out their books should mean that their goal for publishing their work was more succesful. So looking further into this, I found out that `r most_publish_checkout` were the publishers with the most checkouts. 
 
