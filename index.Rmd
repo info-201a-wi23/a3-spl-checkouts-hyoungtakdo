@@ -42,7 +42,7 @@ For this graph, I took a look at the checkout counts per month comparing physica
 
 ### Seuss Book Chart
 
-``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("chart2_example.R")}
+``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart2_example.R")}
 ```
 
 For this chart, I took a look at some of Seuss's books over the span of the year 2022 and looked at how often they were checked out per month. I looked into this data because Seuss is a well known name and these four different books by him all had different and interesting data. First off, out of the four books, I saw that the book Fox in socks was the most popular while it seemed like Happy birthday to you! was the least popular. I also noticed how the rates of the books being checked out increase and decrease go in a very steep rate. it was either checked out a lot, and than checked out way lower the next month. I grew up on Seuss books and I see that it is still being read by people in the library to this day.
@@ -50,7 +50,7 @@ For this chart, I took a look at some of Seuss's books over the span of the year
 ### Checkout Count Per Month Chart
 
 
-``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("chart3.R")}
+``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart3.R")}
 ```
 
 For my last chart, I decided to focus on finding the total amount of checkouts for each month. I decided to make a column chart because I believed showing the visualizations next to each month would best show which month had lower or higher checkout counts each month. While analyzing this data, I found that August had the highest checkout count out of any month. While connecting all my charts, I also saw something interesting where all the numbers for the charts are down around February and April which I thought was really interesting. I also noticed that the numbers of checkouts were not going lower than 600,000, which helped show me that libraries are still up and running and are in good business.
